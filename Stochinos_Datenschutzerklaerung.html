@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Datenschutzerklärung – Stochinos</title>
+  <style>
+    :root{--fg:#0f172a;--muted:#334155;--bg:#ffffff;--accent:#2563eb}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";line-height:1.6;color:var(--fg);background:var(--bg);}
+    header{padding:2.5rem 1.25rem;background:linear-gradient(180deg,#f8fafc,#ffffff);border-bottom:1px solid #e5e7eb}
+    main{max-width:900px;margin:0 auto;padding:1.5rem}
+    h1{margin:0 0 .5rem 0;font-size:2rem}
+    h2{margin-top:2rem;font-size:1.35rem}
+    p,li{font-size:1.02rem;color:var(--fg)}
+    .muted{color:var(--muted)}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:1.25rem}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    ul{margin:0 0 1rem 1.1rem}
+    .footer{margin-top:3rem;padding-top:1rem;border-top:1px solid #e5e7eb;color:var(--muted);font-size:.95rem}
+    .chip{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;padding:.15rem .5rem;border-radius:999px;font-size:.85rem;margin-left:.4rem}
+  </style>
+</head>
+<body>
+  <header>
+    <main>
+      <h1>Datenschutzerklärung <span class="chip">App „Stochinos“</span></h1>
+      <p class="muted">Stand: <span id="stand"></span></p>
+    </main>
+  </header>
+
+  <main class="card">
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Diese App wird betrieben von:<br>
+      <strong>Stefan Richter</strong><br>
+      Heinrich-Heine-Universität Düsseldorf<br>
+      E‑Mail: <a href="mailto:wuc13lut@hhu.de">wuc13lut@hhu.de</a>
+    </p>
+
+    <h2>2. Zweck der App</h2>
+    <p>Die App „Stochinos“ ist eine Lernanwendung für Stochastik an der Heinrich‑Heine‑Universität Düsseldorf. Die Nutzung erfolgt freiwillig und unentgeltlich.</p>
+
+    <h2>3. Erhobene Daten und Zwecke</h2>
+
+    <h3>a) Nutzerkonto (Supabase Auth)</h3>
+    <ul>
+      <li>E‑Mail‑Adresse (zur Authentifizierung)</li>
+      <li>Benutzername (frei wählbar, öffentlich sichtbar)</li>
+      <li>Passwort (verschlüsselt gespeichert)</li>
+    </ul>
+    <p>Diese Daten werden zur Verwaltung des Nutzerkontos und zur Synchronisierung der Spielfortschritte verarbeitet.</p>
+
+    <h3>b) Spiel- und Fortschrittsdaten</h3>
+    <p>Spielstände, Level, gesammelte Fragen und Punkte werden auf dem Server <strong>stochastik-app.hhu.de</strong> (Deutschland) gespeichert. Diese Daten werden ausschließlich für den Spielbetrieb und die Anzeige der Rangliste innerhalb der App verwendet.</p>
+
+    <h3>c) Standortdaten (optional)</h3>
+    <p>Bei Nutzung der Kartenfunktion („Fragen in der Umgebung“) wird der Gerätestandort verarbeitet, um nahegelegene Fragen anzuzeigen. Die Standortfreigabe ist freiwillig; ohne Freigabe ist die App nutzbar, jedoch mit eingeschränkter Funktionalität.</p>
+    <ul>
+      <li>Standortdaten werden nicht dauerhaft gespeichert.</li>
+      <li>Es wird gespeichert, welche Fragen an welchem Tag eingesammelt wurden.</li>
+      <li>Die Fragen befinden sich im Umkreis von ca. 2&nbsp;km rund um die HHU Düsseldorf. Daraus kann kurzfristig der Aufenthaltsbereich abgeleitet werden.</li>
+      <li>Diese Informationen werden nach <strong>24&nbsp;Stunden</strong> automatisch gelöscht.</li>
+    </ul>
+
+    <h3>d) Verbindungs- und Gerätedaten</h3>
+    <p>Beim Serverzugriff fallen technisch notwendige Daten (z. B. IP‑Adresse, Zeitstempel) in Logfiles an. Diese dienen dem sicheren Betrieb und werden nicht mit Nutzerkonten verknüpft.</p>
+
+    <h2>4. Rechtsgrundlagen</h2>
+    <ul>
+      <li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, z. B. für Standort)</li>
+      <li>Art. 6 Abs. 1 lit. b DSGVO (Nutzerkonto / Vertragserfüllung)</li>
+      <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb)</li>
+    </ul>
+
+    <h2>5. Empfänger & Auftragsverarbeitung</h2>
+    <p>Die Verarbeitung erfolgt auf Servern der <strong>Heinrich-Heine-Universität Düsseldorf</strong> in Deutschland. Es erfolgt keine Weitergabe an Dritte und keine kommerzielle Nutzung.</p>
+    <p>Für Authentifizierung und Nutzerverwaltung wird <strong>Supabase</strong> als Auftragsverarbeiter eingesetzt (Art. 28 DSGVO), mit Datenverarbeitung in der EU (z. B. Frankfurt am Main). Ein entsprechender Auftragsverarbeitungsvertrag (AVV) ist Bestandteil des Dienstes.</p>
+
+    <h2>6. Speicherdauer</h2>
+    <ul>
+      <li>Kontodaten (E‑Mail, Benutzername): bis zur Kontolöschung</li>
+      <li>Standortbezogene Informationen zu eingesammelten Fragen: <strong>24&nbsp;Stunden</strong></li>
+      <li>Server‑Logdaten: spätestens nach 7&nbsp;Tagen</li>
+    </ul>
+
+    <h2>7. Rechte der betroffenen Personen</h2>
+    <ul>
+      <li>Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung (Art. 18)</li>
+      <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li>Widerruf von Einwilligungen (Art. 7 Abs. 3 DSGVO) mit Wirkung für die Zukunft</li>
+    </ul>
+    <p>Zur Ausübung der Rechte genügt eine formlose E‑Mail an die oben genannte Kontaktadresse.</p>
+
+    <h2>8. Datensicherheit</h2>
+    <p>Die Übertragung erfolgt ausschließlich verschlüsselt (HTTPS). Passwörter werden nicht im Klartext gespeichert.</p>
+
+    <h2>9. Änderungen dieser Erklärung</h2>
+    <p>Diese Erklärung kann angepasst werden, um rechtliche oder funktionale Änderungen der App abzubilden.</p>
+
+    <h2>10. Kontakt</h2>
+    <p>Fragen zum Datenschutz richten Sie bitte an: <a href="mailto:wuc13lut@hhu.de">wuc13lut@hhu.de</a></p>
+
+    <div class="footer">
+      <p>Hinweis: Diese Datenschutzerklärung wurde speziell für die App „Stochinos“ erstellt.</p>
+    </div>
+  </main>
+
+  <script>
+    // Datum automatisch setzen
+    const d = new Date();
+    const pad = (n)=>String(n).padStart(2,'0');
+    document.getElementById('stand').textContent =
+      d.getFullYear() + '-' + pad(d.getMonth()+1) + '-' + pad(d.getDate());
+  </script>
+</body>
+</html>
