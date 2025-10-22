@@ -24,8 +24,32 @@
     .panel{background:var(--panel);border:1px solid var(--ring);border-radius:16px;padding:16px}
     .features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
     .feature{background:#fff;border:1px solid var(--ring);border-radius:14px;padding:14px}
-    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-    .gallery img{width:100%;height:240px;object-fit:cover;border-radius:12px;border:1px solid var(--ring);background:#fff}
+    
+/* alte .gallery-Styles komplett ersetzen */
+.gallery{
+  column-count: 3;           /* 3 Spalten am Desktop */
+  column-gap: 12px;
+}
+.gallery figure{
+  break-inside: avoid;       /* kein Spaltenumbruch mitten im Bild */
+  margin: 0 0 12px 0;
+  display: inline-block;
+  width: 100%;
+}
+.gallery img{
+  width: 100%;
+  height: auto;              /* Seitenverhältnis beibehalten */
+  border-radius: 12px;
+  border: 1px solid var(--ring);
+  background: #fff;
+  display: block;
+}
+figcaption{
+  font-size: .9rem;
+  color: var(--muted);
+  margin-top: 6px;
+}
+    
     figure{margin:0}
     figcaption{font-size:.9rem;color:var(--muted);margin-top:6px}
     footer{border-top:1px solid var(--ring);margin-top:32px}
