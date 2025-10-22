@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stochinos – XML-Quiz App</title>
+  <meta name="description" content="Lerne Stochastik mit dem XML-Quiz: Fragen sammeln, lösen und Level aufsteigen – mit süßen Monstern, Karte und Fortschritt." />
+  <meta name="theme-color" content="#6d28d9" />
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#1f2937; --muted:#6b7280; --brand:#6d28d9; --panel:#f8fafc;
+      --ring:#e5e7eb; --cta:#9333ea; --cta-fg:#fff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+    a{color:#2563eb;text-decoration:none} a:hover{text-decoration:underline}
+    header{background:linear-gradient(140deg,#ede9fe, #f5f3ff);border-bottom:1px solid var(--ring)}
+    .wrap{max-width:1080px;margin:0 auto;padding:24px}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center}
+    h1{font-size:clamp(1.8rem,3.8vw,3rem);margin:0 0 10px}
+    h2{font-size:clamp(1.3rem,2.5vw,1.8rem);margin:22px 0 10px}
+    p.lead{font-size:1.1rem;color:var(--muted);margin:0 0 16px}
+    .cta{display:inline-block;background:var(--cta);color:var(--cta-fg);padding:12px 18px;border-radius:12px;font-weight:600}
+    .panel{background:var(--panel);border:1px solid var(--ring);border-radius:16px;padding:16px}
+    .features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .feature{background:#fff;border:1px solid var(--ring);border-radius:14px;padding:14px}
+    .gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+    .gallery img{width:100%;height:240px;object-fit:cover;border-radius:12px;border:1px solid var(--ring);background:#fff}
+    figure{margin:0}
+    figcaption{font-size:.9rem;color:var(--muted);margin-top:6px}
+    footer{border-top:1px solid var(--ring);margin-top:32px}
+    .links{display:flex;gap:16px;flex-wrap:wrap}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media (max-width:600px){
+      .features,.gallery{grid-template-columns:1fr}
+      .gallery img{height:220px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <h1>Stochinos – das XML-Quiz</h1>
+      <p class="lead">Fragen sammeln, richtig lösen und Level aufsteigen. Lerne Stochastik spielerisch – mit Karte, Fragen-Dex, Monstern & gemeinsamem Fortschritt.</p>
+      <!-- Play-Store-URL hier eintragen -->
+      <p class="links">
+        <a class="cta" href="#" aria-label="Zur App im Google Play Store">Im Play Store ansehen</a>
+        <a href="#screens">Screenshots</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="konto-loeschen.html">Konto löschen</a>
+      </p>
+    </div>
+    <div class="panel">
+      <figure>
+        <img src="startseite1.jpg" alt="Startseite der App mit Level und Aktionen" style="width:100%;height:auto;border-radius:12px;border:1px solid var(--ring)" />
+        <figcaption>Startbildschirm mit Level-Fortschritt & Aktionen</figcaption>
+      </figure>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <h2>Warum Stochinos?</h2>
+    <div class="features">
+      <div class="feature">
+        <strong>Fragen sammeln</strong>
+        <p>Auf der Karte neue Fragen entdecken und einsammeln – optional mit ungefährer Standortfreigabe.</p>
+      </div>
+      <div class="feature">
+        <strong>Üben & leveln</strong>
+        <p>Multiple-Choice, Zuordnung & mehr. Für richtige Antworten gibt’s XP für dich und deine Monster.</p>
+      </div>
+      <div class="feature">
+        <strong>Fragen-Dex</strong>
+        <p>Behalte den Überblick: gesehene, gelöste und fehlende Fragen auf einen Blick.</p>
+      </div>
+      <div class="feature">
+        <strong>Gemeinsamer Fortschritt</strong>
+        <p>Sieh, wie du im Vergleich mit anderen stehst – Level und Gesamt-XP werden sichtbar.</p>
+      </div>
+      <div class="feature">
+        <strong>Datenschutz</strong>
+        <p>E-Mail & interne Nutzer-ID werden zur Anmeldung genutzt. Spielfortschritt bleibt bei dir und kann jederzeit gelöscht werden.</p>
+      </div>
+      <div class="feature">
+        <strong>Konto löschen</strong>
+        <p>In der App: Startseite → <em>Account löschen</em>. Alle Daten und das Konto werden direkt entfernt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="screens">
+    <h2>Screenshots</h2>
+    <div class="gallery">
+      <figure>
+        <img src="frage.jpg" alt="Frage lösen mit Antwortoptionen" />
+        <figcaption>Aufgaben lösen</figcaption>
+      </figure>
+      <figure>
+        <img src="ergebnis_beantwortung_frage.jpg" alt="Ergebnisdialog nach Antwort mit XP" />
+        <figcaption>Feedback & XP</figcaption>
+      </figure>
+      <figure>
+        <img src="fragen_sammeln.jpg" alt="Fragen auf der Karte sammeln" />
+        <figcaption>Fragen sammeln (Karte)</figcaption>
+      </figure>
+      <figure>
+        <img src="fragenbeispiel.jpg" alt="Beispielfrage mit mehreren Optionen" />
+        <figcaption>Verschiedene Fragetypen</figcaption>
+      </figure>
+      <figure>
+        <img src="fragendex.jpg" alt="Fragen-Dex Übersicht" />
+        <figcaption>Fragen-Dex</figcaption>
+      </figure>
+      <figure>
+        <img src="monster_seite.jpg" alt="Monster-Profil mit Level und Fortschritt" />
+        <figcaption>Monster & Level</figcaption>
+      </figure>
+      <figure>
+        <img src="player_fortschritt.jpg" alt="Spielerstatistik mit Fortschrittsbalken" />
+        <figcaption>Dein Fortschritt</figcaption>
+      </figure>
+      <figure>
+        <img src="startseite2.jpg" alt="Startseite mit Aktionen" />
+        <figcaption>Alle Aktionen im Blick</figcaption>
+      </figure>
+      <figure>
+        <img src="startseite1.jpg" alt="Startseite mit Namen und XP" />
+        <figcaption>Start</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Datenschutz & Konto-Löschung</h2>
+    <div class="panel">
+      <p>
+        Die App nutzt deine <strong>E-Mail</strong> für die Anmeldung und eine interne <strong>Nutzer-ID</strong> zur Zuordnung deines Spielfortschritts.
+        Du kannst dein <strong>Konto</strong> inklusive aller Daten jederzeit in der App löschen:
+        <em>Startseite → Account löschen</em>.
+      </p>
+      <p class="links">
+        <a href="datenschutz.html">Zur Datenschutzerklärung</a> ·
+        <a href="konto-loeschen.html">Anleitung: Konto löschen</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <p class="muted">© <span id="y"></span> Stochinos • XML-Quiz • <a href="mailto:support@example.com">support@example.com</a></p>
+  </footer>
+</main>
+
+<script>
+  // Jahr automatisch
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
